@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Reservation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Airline Reservation System</h1>
+    </header>
+    <main>
+        <form id="reservationForm">
+            <label for="name">Passenger Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="flight">Select Flight:</label>
+            <select id="flight" name="flight" required>
+                <option value="Flight A">Flight A - 10:00 AM</option>
+                <option value="Flight B">Flight B - 02:00 PM</option>
+                <option value="Flight C">Flight C - 06:00 PM</option>
+            </select><br>
+
+            <button type="submit">Reserve</button>
+        </form>
+        <div id="confirmationMessage"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
